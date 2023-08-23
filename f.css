@@ -1,0 +1,101 @@
+body {
+  margin: 2em 20%;
+  font: 100% "Crimson Text", Palatino, Georgia, serif;
+  color: #4c4b4b;
+}
+
+.title-wrapper {
+  display: grid;
+  grid-template-columns: 65% auto;
+  border-bottom: 1px solid #e5e4e4;
+}
+
+.title-text {
+  grid-column: 1/2;
+  font-size: 3.33em;
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.title-icon-links {
+  grid-column: 2/2;
+  font-size: 1.83rem;
+  text-align: right;
+  margin-top: 0.66em;
+}
+
+h2 {
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 1.5em 0 0;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 0.33em;
+}
+
+h4 {
+  margin: 0.33em 0;
+  font-size: 1.25em;
+}
+
+.profile-text {
+  font-size: 1.25em;
+  line-height: 1.33em;
+  margin-top: 1em;
+}
+
+.technologies-text {
+  color: #a09f9f;
+  font-style: italic;
+}
+
+p {
+  line-height: 1.33em;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover {
+  color: blue;
+}
+
+* + p {
+  padding-left: 1.33rem;
+}
+
+.footer {
+  margin-top: 2em;
+  padding: 0.5em 0;
+  border-top: 1px solid #e5e4e4;
+  color: #b2b1b1;
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  display: grid;
+  grid-template-columns: 65% auto;
+}
+.footer .footer-left {
+  grid-column: 1/2;
+}
+.footer .footer-right {
+  grid-column: 2/2;
+  text-align: right;
+  font-size: small;
+}
+.footer .footer-right a {
+  color: #b2b1b1;
+}
+.footer .footer-right a:visited {
+  color: #b2b1b1;
+}
+.footer .footer-right a:hover {
+  text-decoration: underline;
+}
