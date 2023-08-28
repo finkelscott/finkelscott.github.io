@@ -1,6 +1,6 @@
 ---
 layout: baselayout.njk
-title: Scott <span class="button">F</span>inkel
+title: Scott Finkel
 ---
 
 <div class="title-wrapper">
