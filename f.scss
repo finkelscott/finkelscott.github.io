@@ -11,6 +11,10 @@ body {
   display: grid;
   grid-template-columns: 65% auto;
   border-bottom: 1px solid lighten($primary-color, 60%);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: white;
 }
 
 .title-text {
