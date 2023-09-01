@@ -48,6 +48,12 @@ h4 {
   font-size: 1.25em;
 }
 
+.core-competencies {
+  text-align: center;
+  margin-top: 2em;
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .profile-text {
   font-size: 1.25em;
   line-height: 1.33em;
