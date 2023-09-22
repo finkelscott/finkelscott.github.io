@@ -12,7 +12,7 @@ title: Scott Finkel
         <a href="https://www.linkedin.com/in/scottfinkel" class="icon-link">
             <i class="icon-linkedin-squared"></i>
         </a>
-        <a href="mailto:scott@finkels.net" class="icon-link">
+        <a href="mailto:scott.finkel@gmail.com" class="icon-link">
             <i class="icon-mail-squared"></i>
         </a>
     </div>
