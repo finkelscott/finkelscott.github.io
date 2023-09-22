@@ -41,7 +41,7 @@ Communications (verbal | visual | written)  |  Process Design  |  System Integra
 <ul>
 <li>
 <p> 
-Tapped as Project Lead for CodeLinaro, a platform partnership between Qualcomm and Linaro for the distribution of Open-Source code and artifacts related to Qualcomm software releases. Managed a team of engineers and analysts during and beyond the successful transition to this new system and process, where we added automation, enhanced security, and other key features to enable external business partners to download and build software products.
+Designated Project Lead for CodeLinaro, a platform partnership between Qualcomm and Linaro for the distribution of Open-Source code and artifacts related to Qualcomm software releases. Managed a team of engineers and analysts during and beyond the successful transition to this new system and process, where we added automation, enhanced security, and other key features to enable external business partners to download and build software products.
 <span class="technologies-text">Leadership, Python, JSON-API, Operations</span>
 </p>
 </li>
