@@ -26,9 +26,9 @@ Software Engineer with a focus on front-end web applications. Former design lead
 <p style="text-decoration: underline;">
 Core Competencies</p>
 <p>
-Application Design & Development  |  Creative Problem Solving  |  Technical Leadership  |  Technical Architecture <br />
+Application Design & Development  |  Creative Problem Solving  |  Front-End Engineering  |  Usability <br />
 User Experience Design (UXD)  |  Strategic Planning  |  System Architecture  |  User Interface (UI) Design <br />
-Communications (verbal | visual | written)  |  Process Design  |  System Integration  |  Release Management <br />
+Communications (verbal | visual | written)  |  Process Design  |  System Integration  |  UI/UX Prototyping <br />
 </div>
 
 <h2>Experience</h2>
@@ -162,8 +162,8 @@ The Presentation Layer | Principal Organizer | 2014</br/>
  • 
 <a href="https://www.linkedin.com/in/scott-finkel-304838">LinkedIn</a>
  • 
-<a href="mailto:scott@finkels.net">E-Mail</a>
+<a href="mailto:scott.finkel@gmail.com">E-Mail</a>
  • 
-<a href="scott-finkel-09012023-1600.docx">Download</a>
+<a href="Scott-Finkel-09222023-1130.docx">Download</a>
 </span>
 </div>
