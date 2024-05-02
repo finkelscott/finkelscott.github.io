@@ -7,7 +7,7 @@ body {
 .title-wrapper {
   display: grid;
   grid-template-columns: 65% auto;
-  border-bottom: 1px solid #e5e4e4;
+  border-bottom: 4px double #999797;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -16,7 +16,7 @@ body {
 
 .title-text {
   grid-column: 1/2;
-  font-size: 3.33em;
+  font-size: 2.83em;
   font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   margin-bottom: 0;
@@ -31,21 +31,33 @@ body {
 
 h2 {
   font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2em;
+  font-variant: small-caps;
+  font-size: 1.2em;
   font-weight: 700;
-  margin: 1.5em 0 0;
+  margin: 1.5em 0 0.8em 0;
+  border-bottom: 1px solid #999797;
 }
 
-h3 {
-  text-transform: uppercase;
-  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  margin-bottom: 0.33em;
+.company, .projectdescription {
+  margin-bottom: 0.5em;
 }
 
-h4 {
-  margin: 0.33em 0;
-  font-size: 1.25em;
+.projectdescription {
+  margin-top: 0.33em;
+}
+
+.titletenure {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title, .tenure {
+  font-weight: bolder;
+  margin: 0;
+}
+
+.rolebullet {
+  margin-top: 0.5em;
 }
 
 .core-competencies {
@@ -55,18 +67,13 @@ h4 {
 }
 
 .profile-text {
-  font-size: 1.25em;
+  font-size: 1.1em;
   line-height: 1.33em;
-  margin-top: 1em;
-}
-
-.technologies-text {
-  color: #a09f9f;
-  font-style: italic;
+  margin: 0.66em 0 1.5em 0;
 }
 
 p {
-  line-height: 1.33em;
+  margin: 0;
 }
 
 a {
@@ -78,8 +85,14 @@ a:hover {
   color: blue;
 }
 
-* + p {
-  padding-left: 1.33rem;
+ul {
+  padding-inline-start: 1.5em;
+  margin-top: 0.33em;
+  margin-bottom: 1.25em;
+}
+
+li {
+  margin-bottom: 0.33em;
 }
 
 .footer {
