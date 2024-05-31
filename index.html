@@ -1,0 +1,60 @@
+---
+layout: baselayout.njk
+title: Scott J Finkel
+---
+<sl-dialog label="Coming Soon" class="dialog-overview">
+  <p>My work has been almost entirely inside the firewall, and as such my portfolio is under development.</p><br />
+  <p>Please visit the <strong><a style="color:blue" target="_blank" href="https://quic.github.io/">Qualcomm Innovation Center (QuIC)</a></strong>  landing page for one recent external project I contributed to.</p>
+  <sl-button slot="footer" variant="primary">Close</sl-button>
+</sl-dialog>
+
+
+<script>
+  const dialog = document.querySelector('.dialog-overview');
+  const openButton = dialog.nextElementSibling;
+  const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+
+  openButton.addEventListener('click', () => dialog.show());
+  closeButton.addEventListener('click', () => dialog.hide());
+</script>
+
+
+<h1>Hi, I'm Scott 👋</h1>
+<h3>I am a creative technologist, product designer, and front-end engineer; veteran of a global enterprise company who thrives at the intersection of design, collaboration, and technology.</h3>
+
+<h4> What brings you here today?</h4>
+
+<div class="card-container">
+<a href="/resume">
+<sl-card class="card-image">
+  <img
+    slot="image"
+    src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=600"
+    alt="The word resume handwritten in chalk on blackboard."
+  />
+  <p>I'd like to review your résumé.</p>
+</sl-card>
+</a>
+<!--
+<a href="https://github.com/finkelscott/">
+<sl-card class="card-image">
+  <img
+    slot="image"
+    src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600"
+    alt="The word resume handwritten in chalk on blackboard."
+  />
+  <p>Tell me about some projects you've contributed to.</p>
+</sl-card>
+</a>
+-->
+<a href="#" onClick="dialog.show();">
+<sl-card class="card-image">
+  <img
+    slot="image"
+    src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=600"
+    alt="Sketch in black pen on paper of a website prototype."
+  />
+  <p>Show me some samples of your work. (coming soon)</p>
+</sl-card>
+</a>
+</div>
