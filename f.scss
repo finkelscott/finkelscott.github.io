@@ -1,10 +1,40 @@
 $primary-color: #4c4b4b;
 $sans: 'Merriweather Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+/*
+* Map for breakpoints
+*/
+$breakpoints: (
+  "small": 320px,
+  "medium": 720px,
+  "large": 960px,
+); 
+
+@mixin responsive($size) {
+  $query: map-get($breakpoints, $size);
+  
+    @media (min-width: $query) {
+      @content;
+  }
+}
+
 body {
-  margin: 2em 20%;
   font: 100% 'Crimson Text', Palatino, Georgia, serif;
   color: $primary-color;
+
+  @include responsive('small') { 
+    margin: 0.75rem 3%;
+    font-size: 85%;
+  }
+  @include responsive('medium') {
+    margin: 1rem 5%;
+    font-size: 95%;
+  }
+  @include responsive('large') {
+    margin: 2rem 25%; 
+    font-size: 100%;
+  }
+
 }
 
 .title-wrapper {
@@ -19,23 +49,43 @@ body {
 
 .title-text {
   grid-column: 1/2;  
-  font-size: 2.83em;
   font-family: $sans;
   font-weight: 700;
   margin-bottom: 0;
+
+  @include responsive('small') { 
+    font-size: 1.66rem;
+  }
+  @include responsive('medium') { 
+    font-size: 2.25rem;
+  }
+  @include responsive('large') { 
+    font-size: 2.83em;
+  }
 }
 
 .title-icon-links {
   grid-column: 2/2;
-  font-size: 1.83rem;
   text-align: right;
-  margin-top: 0.66em;
+
+  @include responsive('small') { 
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+  }
+  @include responsive('medium') { 
+    font-size: 1.75rem;
+    margin-top: 0.5rem;
+  }
+  @include responsive('large') { 
+    margin-top: 0.66em;
+    font-size: 1.83rem;
+  }
 }
 
 h2 {
   font-family: $sans;
   font-variant: small-caps;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 700;
   margin: 1.5em 0 0.8em 0;
   border-bottom: 1px solid lighten($primary-color, 30%);
@@ -104,7 +154,7 @@ li {
   font-family: $sans;
   font-weight: 300;
   display: grid;
-  grid-template-columns: 65% auto;
+  grid-template-columns: 25% auto;
 
   .footer-left {
     grid-column: 1/2;  
@@ -113,7 +163,7 @@ li {
   .footer-right {
     grid-column: 2/2;  
     text-align: right;
-    font-size: small;
+    font-size: smaller;
 
     a {
       color: lighten($primary-color, 40%);
@@ -135,8 +185,21 @@ li {
 }
 
 .card-image {
-  max-width: 250px;
-  min-width: 250px;
+  color:blue;
+
+  @include responsive('small') { 
+    margin-bottom: 1rem;
+    max-width: 150px;
+    min-width: 150px;
+  }
+  @include responsive('medium') { 
+    max-width: 250px;
+    min-width: 250px;
+  }
+  @include responsive('large') { 
+    max-width: 250px;
+    min-width: 250px;
+  }
 }
 
 .buttonbar {
