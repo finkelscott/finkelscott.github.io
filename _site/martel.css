@@ -1,0 +1,55 @@
+
+    @font-face {
+    font-family: 'Martel Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/Martel-Regular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Martel UltraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/Martel-UltraLight.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Martel Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/Martel-Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Martel DemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/Martel-DemiBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Martel Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/Martel-Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Martel ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/Martel-ExtraBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Martel Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/Martel-Heavy.woff') format('woff');
+    }
