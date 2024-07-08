@@ -1,7 +1,44 @@
+.merriweather-sans-light {
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/*
+* Map for breakpoints
+*/
 body {
-  margin: 2em 20%;
-  font: 100% "Crimson Text", Palatino, Georgia, serif;
+  font-family: "Martel Light", Palatino, Georgia, serif;
   color: #4c4b4b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 320px) {
+  body {
+    margin: 0.75rem 3%;
+    font-size: 85%;
+  }
+}
+@media (min-width: 720px) {
+  body {
+    margin: 1rem 5%;
+    font-size: 95%;
+  }
+}
+@media (min-width: 960px) {
+  body {
+    margin: 2rem 20%;
+    font-size: 100%;
+  }
+}
+
+.bigdot {
+  background-color: var(--sl-color-primary-600);
+  border-radius: 9999px;
+  width: 1.33rem;
+  height: 1.33rem;
+  margin-bottom: 3.5rem;
 }
 
 .title-wrapper {
@@ -16,26 +53,90 @@ body {
 
 .title-text {
   grid-column: 1/2;
-  font-size: 2.83em;
   font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   margin-bottom: 0;
 }
+@media (min-width: 320px) {
+  .title-text {
+    font-size: 1.66rem;
+  }
+}
+@media (min-width: 720px) {
+  .title-text {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 960px) {
+  .title-text {
+    font-size: 2.83em;
+  }
+}
 
 .title-icon-links {
   grid-column: 2/2;
-  font-size: 1.83rem;
   text-align: right;
-  margin-top: 0.66em;
+}
+@media (min-width: 320px) {
+  .title-icon-links {
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+  }
+}
+@media (min-width: 720px) {
+  .title-icon-links {
+    font-size: 1.75rem;
+    margin-top: 0.5rem;
+  }
+}
+@media (min-width: 960px) {
+  .title-icon-links {
+    margin-top: 0.66em;
+    font-size: 1.83rem;
+  }
 }
 
-h2 {
+h1 {
+  margin-bottom: 3rem;
+  letter-spacing: -0.05em;
+  line-height: 125%;
+}
+@media (min-width: 320px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 960px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.heading2 {
   font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variant: small-caps;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 700;
   margin: 1.5em 0 0.8em 0;
   border-bottom: 1px solid #999797;
+}
+
+h2 {
+  letter-spacing: -0.05em;
+}
+
+h3 {
+  line-height: 1.5rem;
+}
+
+.open-photo {
+  object-fit: cover;
+  height: 165px;
+  width: 250px;
+}
+
+.title-subheading {
+  margin-top: 0;
 }
 
 .company, .projectdescription {
@@ -103,7 +204,7 @@ li {
   font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   display: grid;
-  grid-template-columns: 65% auto;
+  grid-template-columns: 25% auto;
 }
 .footer .footer-left {
   grid-column: 1/2;
@@ -111,7 +212,7 @@ li {
 .footer .footer-right {
   grid-column: 2/2;
   text-align: right;
-  font-size: small;
+  font-size: smaller;
 }
 .footer .footer-right a {
   color: #b2b1b1;
@@ -123,18 +224,62 @@ li {
   text-decoration: underline;
 }
 
-.card-container {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.card-image {
-  max-width: 250px;
-  min-width: 250px;
-}
-
 .buttonbar {
   width: 100%;
   text-align: right;
   margin-bottom: 2em;
+}
+
+.two-col-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 3.5em;
+  grid-template-areas: "a b" "c d" "e f";
+}
+@media (min-width: 320px) {
+  .two-col-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "a" "b" "c" "d" "e" "f";
+  }
+}
+.two-col-grid-container .a {
+  min-width: 250px;
+}
+@media (min-width: 320px) {
+  .two-col-grid-container .a {
+    padding: 0;
+    margin: 0;
+  }
+}
+.two-col-grid-container .b, .two-col-grid-container .d {
+  padding-top: 1.33rem;
+}
+@media (min-width: 320px) {
+  .two-col-grid-container .b, .two-col-grid-container .d {
+    padding-top: 0;
+  }
+}
+.two-col-grid-container .b h3, .two-col-grid-container .b p, .two-col-grid-container .d h3, .two-col-grid-container .d p {
+  margin: 0;
+}
+.two-col-grid-container .b h3, .two-col-grid-container .d h3 {
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+  padding-top: 0.5rem;
+}
+.two-col-grid-container .b .h3-tagline, .two-col-grid-container .d .h3-tagline {
+  padding-bottom: 0.5rem;
+  font-style: italic;
+}
+.two-col-grid-container .b p, .two-col-grid-container .d p {
+  color: rgb(91, 91, 91);
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+.two-col-grid-container .b hr, .two-col-grid-container .d hr {
+  color: lightgray;
+  margin-top: 1.2rem;
 }

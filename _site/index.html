@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/f.css">
     <link rel="stylesheet" href="/fontello.css">
+    <link rel="stylesheet" href="/martel.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/themes/light.css"/>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/shoelace-autoloader.js"></script>
     <script type="module" src="/f.js"></script>
@@ -17,61 +18,58 @@
   </head>
   <body>
 
-    <sl-dialog label="Coming Soon" class="dialog-overview">
-  <p>My work has been almost entirely inside the firewall, and as such my portfolio is under development.</p><br />
-  <p>Please visit the <strong><a style="color:blue" target="_blank" href="https://quic.github.io/">Qualcomm Innovation Center (QuIC)</a></strong>  landing page for one recent external project I contributed to.</p>
-  <sl-button slot="footer" variant="primary">Close</sl-button>
-</sl-dialog>
+    <div class="bigdot">&nbsp;</div>
+<h1>Hi!<br />I'm Scott, an enterprise software designer in San Diego, California.</h1>
 
+<section class="two-col-grid-container">
+  <div class="a"><h2>What I'm good at.</h2></div>
+  <div class="b">
+    <h3>Business Process Mapping</h3>
+    <p class="merriweather-sans-light h3-tagline">Good design starts at the beginning.</p>
+    <p />
+    <p>By designing processes prior to look and feel, we examine the roots of the goal, consider the impact of information architecture, and provide a more holistic, scalable solution.</p>
+    
+    <hr size="1" />
 
-<script>
-  const dialog = document.querySelector('.dialog-overview');
-  const openButton = dialog.nextElementSibling;
-  const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+    <h3>Prototypes &amp; Usability Testing</h3>
+    <p class="merriweather-sans-light h3-tagline">Iterate before you code.</p>
+    <p />
+    <p>
+      Building fast and breaking things is expensive. Iterate faster with mockups and build the right thing the first time.
+    </p>
+    
+    <hr size="1" />
+    
+    <h3>User Interface Design</h3>
+    <p class="merriweather-sans-light h3-tagline">A well-designed product is a joy to use.</p>
+    <p />
+    <p>
+      Engaging with users early and often ensures the fit and finish of your application doesn't drift away from the features your users need to succeed. 
+    </p>
 
-  openButton.addEventListener('click', () => dialog.show());
-  closeButton.addEventListener('click', () => dialog.hide());
-</script>
+    <hr size="1" />
 
+    <h3>Technical Documentation</h3>
+    <p class="merriweather-sans-light h3-tagline">If it isn't documented, it isn't done.</p>
+    <p />
+    <p>
+      Design docs, Help systems, User guides, FAQs, and Release notes are all fundamental to modern software development. These artifacts need not be dry and boring, but should engage users and lead them to success. 
+    </p>
+  </div>
 
-<h1>Hi, I'm Scott 👋</h1>
-<h3>I am a creative technologist, product designer, and front-end engineer; veteran of a global enterprise company who thrives at the intersection of design, collaboration, and technology.</h3>
+  <div class="c"><h2>Want to learn more?</h2></div>
+  <div class="d">
 
-<h4>What brings you here today?</h4>
+  <a href="/about">
+    <sl-button variant="primary" outline>About</sl-button>
+  </a>
+  <a href="/resume">
+    <sl-button variant="primary" outline>Résumé</sl-button>
+  </a>
+  <a href="/examples">
+    <sl-button variant="primary" outline>Examples</sl-button>
+  </a>
 
-<div class="card-container">
-<a href="/resume">
-<sl-card class="card-image">
-  <img
-    slot="image"
-    src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=600"
-    alt="The word resume handwritten in chalk on blackboard."
-  />
-  <p>I'd like to review your résumé.</p>
-</sl-card>
-</a>
-<!--
-<a href="https://github.com/finkelscott/">
-<sl-card class="card-image">
-  <img
-    slot="image"
-    src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600"
-    alt="The word resume handwritten in chalk on blackboard."
-  />
-  <p>Tell me about some projects you've contributed to.</p>
-</sl-card>
-</a>
--->
-<a href="#" onClick="dialog.show();">
-<sl-card class="card-image">
-  <img
-    slot="image"
-    src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=600"
-    alt="Sketch in black pen on paper of a website prototype."
-  />
-  <p>Show me some samples of your work. (coming soon)</p>
-</sl-card>
-</a>
 </div>
 
   </body>

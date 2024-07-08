@@ -1,6 +1,14 @@
 $primary-color: #4c4b4b;
 $sans: 'Merriweather Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: 'Martel Light', Palatino, Georgia, serif;
+
+.merriweather-sans-light {
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 /*
 * Map for breakpoints
 */
@@ -33,10 +41,18 @@ body {
     font-size: 95%;
   }
   @include responsive('large') {
-    margin: 2rem 25%; 
+    margin: 2rem 20%; 
     font-size: 100%;
   }
 
+}
+
+.bigdot {
+  background-color: var(--sl-color-primary-600);
+  border-radius: 9999px;
+  width: 1.33rem;
+  height: 1.33rem;
+  margin-bottom: 3.5rem;
 }
 
 .title-wrapper {
@@ -85,7 +101,10 @@ body {
 }
 
 h1 {
+  margin-bottom: 3rem;
   letter-spacing: -0.05em;
+  line-height: 125%;
+
   @include responsive('small') { 
     font-size: 2rem;
   }
@@ -94,7 +113,7 @@ h1 {
   }
 }
 
-h2 {
+.heading2 {
   font-family: $sans;
   font-variant: small-caps;
   font-size: 1.2rem;
@@ -103,8 +122,22 @@ h2 {
   border-bottom: 1px solid lighten($primary-color, 30%);
 }
 
+h2 {
+  letter-spacing: -0.05em;
+}
+
 h3 {
   line-height: 1.5rem;
+}
+
+.open-photo {
+  object-fit: cover;
+  height: 165px;
+  width: 250px;
+}
+
+.title-subheading {
+  margin-top: 0;
 }
 
 .company, .projectdescription {
@@ -195,31 +228,76 @@ li {
   }
 }
 
-.card-container {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.card-image {
-  color:blue;
-
-  @include responsive('small') { 
-    margin-bottom: 1rem;
-    max-width: 150px;
-    min-width: 150px;
-  }
-  @include responsive('medium') { 
-    max-width: 250px;
-    min-width: 250px;
-  }
-  @include responsive('large') { 
-    max-width: 250px;
-    min-width: 250px;
-  }
-}
 
 .buttonbar {
   width: 100%;
   text-align: right;
   margin-bottom: 2em;
+}
+
+.two-col-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 3.5em;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e f";
+
+  @include responsive('small') { 
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f";
+  }
+
+  .a {
+    min-width: 250px;
+    @include responsive('small') { 
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .b, .d {
+    padding-top: 1.33rem;
+ 
+    @include responsive('small') { 
+      padding-top: 0;
+    }
+
+
+    h3, p {
+      margin: 0;
+    }
+
+    h3 {
+      font-family: $sans;
+      font-size: 1.1rem;
+      padding-top: 0.5rem;
+    }
+
+    .h3-tagline {
+      padding-bottom: 0.5rem;
+      font-style: italic;
+    }
+
+    p {
+      color: rgb(91, 91, 91);
+      font-family: "Merriweather Sans", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+    }
+
+    hr {
+      color: lightgray;
+      margin-top: 1.2rem
+    }
+  }
 }
