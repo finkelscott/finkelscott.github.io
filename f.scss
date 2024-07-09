@@ -14,13 +14,12 @@ $serif: 'Martel Light', Palatino, Georgia, serif;
 */
 $breakpoints: (
   "small": 320px,
-  "medium": 720px,
+  "medium": 795px,
   "large": 960px,
 ); 
 
 @mixin responsive($size) {
   $query: map-get($breakpoints, $size);
-  
     @media (min-width: $query) {
       @content;
   }
@@ -45,6 +44,21 @@ body {
     font-size: 100%;
   }
 
+}
+
+.homelink {
+  color: var(--sl-color-primary-300);
+  margin-bottom: 0;
+
+  @include responsive('small') { 
+    font-size: 1.66rem;
+  }
+  @include responsive('medium') { 
+    font-size: 2rem;
+  }
+  @include responsive('large') { 
+    font-size: 2em;
+  }
 }
 
 .bigdot {
@@ -101,15 +115,18 @@ body {
 }
 
 h1 {
-  margin-bottom: 3rem;
   letter-spacing: -0.05em;
-  line-height: 125%;
 
   @include responsive('small') { 
     font-size: 2rem;
+    line-height: 110%;
+    margin-bottom: 0;
   }
   @include responsive('large') { 
     font-size: 3rem;
+    line-height: 125%;
+    // margin-top: 0;
+    margin-bottom: 1rem;
   }
 }
 
@@ -237,12 +254,6 @@ li {
 
 .two-col-grid-container {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-gap: 3.5em;
-  grid-template-areas:
-    "a b"
-    "c d"
-    "e f";
 
   @include responsive('small') { 
     grid-template-columns: 1fr;
@@ -254,20 +265,32 @@ li {
       "e"
       "f";
   }
+  @include responsive('medium') { 
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 3.5em;
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f";
+  }
 
   .a {
-    min-width: 250px;
     @include responsive('small') { 
       padding: 0;
       margin: 0;
     }
+    @include responsive('medium') { 
+      min-width: 250px;
+    }
+
   }
 
-  .b, .d {
-    padding-top: 1.33rem;
- 
+  .b, .d, .f {
     @include responsive('small') { 
       padding-top: 0;
+    }
+    @include responsive('medium') { 
+      padding-top: 1.33rem;
     }
 
 
@@ -300,4 +323,9 @@ li {
       margin-top: 1.2rem
     }
   }
+}
+
+.note {
+  color: rgb(121, 121, 121);
+  line-height: 1.2rem;
 }
