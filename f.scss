@@ -47,25 +47,27 @@ body {
 }
 
 .homelink {
-  color: var(--sl-color-primary-300);
+  color: var(--sl-color-primary-100);
+  font-size: 28px;
+  padding-left: 4px;
   margin-bottom: 0;
 
-  @include responsive('small') { 
-    font-size: 1.66rem;
-  }
-  @include responsive('medium') { 
-    font-size: 2rem;
-  }
-  @include responsive('large') { 
-    font-size: 2em;
-  }
+  // @include responsive('small') { 
+  //   font-size: 1.66rem;
+  // }
+  // @include responsive('medium') { 
+  //   font-size: 2rem;
+  // }
+  // @include responsive('large') { 
+  //   font-size: 16px;
+  // }
 }
 
 .bigdot {
   background-color: var(--sl-color-primary-600);
   border-radius: 9999px;
-  width: 1.33rem;
-  height: 1.33rem;
+  width: 2.33rem;
+  height: 2.33rem;
   margin-bottom: 3.5rem;
 }
 

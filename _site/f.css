@@ -34,30 +34,17 @@ body {
 }
 
 .homelink {
-  color: var(--sl-color-primary-300);
+  color: var(--sl-color-primary-100);
+  font-size: 28px;
+  padding-left: 4px;
   margin-bottom: 0;
-}
-@media (min-width: 320px) {
-  .homelink {
-    font-size: 1.66rem;
-  }
-}
-@media (min-width: 795px) {
-  .homelink {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 960px) {
-  .homelink {
-    font-size: 2em;
-  }
 }
 
 .bigdot {
   background-color: var(--sl-color-primary-600);
   border-radius: 9999px;
-  width: 1.33rem;
-  height: 1.33rem;
+  width: 2.33rem;
+  height: 2.33rem;
   margin-bottom: 3.5rem;
 }
 
