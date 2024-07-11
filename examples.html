@@ -2,7 +2,7 @@
 layout: baselayout.njk
 title: Scott J Finkel
 ---
-<div class="bigdot"><a class="homelink" href="/"><sl-icon name="house"></sl-icon></a></div>
+{% include 'homelink.njk' %}
 
 
 <h1>Examples</h1>
@@ -42,15 +42,16 @@ title: Scott J Finkel
 
   <div class="e"><h2>Want to learn more?</h2></div>
   <div class="f">
-  <a href="/">
-    <sl-button variant="primary" outline>Home</sl-button>
-  </a>
-  <a href="/resume">
-    <sl-button variant="primary" outline>Résumé</sl-button>
-  </a>
-  <a href="/about">
-    <sl-button variant="primary" outline>About Me</sl-button>
-  </a>
+    <a href="/">
+        <sl-button variant="primary" outline>Home</sl-button>
+    </a>
+    <a href="/resume">
+        <sl-button variant="primary" outline>Résumé</sl-button>
+    </a>
+    <a href="/about">
+        <sl-button variant="primary" outline>About Me</sl-button>
+    </a>
+  </div>
+    {% include 'contact.njk' %}
 
-</div>
 </section>

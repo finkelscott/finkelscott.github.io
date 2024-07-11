@@ -33,11 +33,12 @@ body {
   }
 }
 
-.homelink {
-  color: var(--sl-color-primary-100);
+.homelink sl-icon {
+  color: var(--sl-color-primary-300);
   font-size: 28px;
   padding-left: 4px;
   margin-bottom: 0;
+  margin-top: 3px;
 }
 
 .bigdot {
@@ -186,13 +187,13 @@ p {
   margin: 0;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
-  color: gray;
+  color: var(--sl-color-primary-600);
 }
 
 a:hover {
-  color: blue;
+  color: var(--sl-color-primary-400);
 }
 
 ul {
@@ -311,4 +312,10 @@ li {
   margin-top: 3em;
   color: rgb(121, 121, 121);
   font-size: small;
+}
+
+.contact-info {
+  color: #4a90e2;
+  font-size: 1.75rem;
+  margin-top: -0.25rem;
 }
