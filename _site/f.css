@@ -13,6 +13,8 @@ body {
   color: #4c4b4b;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: clamp(320px, 90%, 800px);
+  margin: auto;
 }
 @media (min-width: 320px) {
   body {
@@ -133,16 +135,11 @@ h1 {
 
 h2 {
   letter-spacing: -0.05em;
+  line-height: 2rem;
 }
 
 h3 {
   line-height: 1.5rem;
-}
-
-.open-photo {
-  object-fit: cover;
-  height: 165px;
-  width: 250px;
 }
 
 .title-subheading {
@@ -163,7 +160,8 @@ h3 {
 }
 
 .title, .tenure {
-  font-weight: bolder;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -318,4 +316,66 @@ li {
   color: #4a90e2;
   font-size: 1.75rem;
   margin-top: -0.25rem;
+}
+
+.resume-two-col-grid-container {
+  display: grid;
+}
+@media (min-width: 320px) {
+  .resume-two-col-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l";
+  }
+}
+@media (min-width: 795px) {
+  .resume-two-col-grid-container {
+    grid-template-columns: 20% 73%;
+    grid-gap: 3.5em;
+    grid-template-areas: "a b" "c d" "e f" "g h" "i j";
+  }
+}
+@media (min-width: 320px) {
+  .resume-two-col-grid-container .a {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (min-width: 795px) {
+  .resume-two-col-grid-container .a {
+    max-width: 150px;
+  }
+}
+@media (min-width: 320px) {
+  .resume-two-col-grid-container .b, .resume-two-col-grid-container .d, .resume-two-col-grid-container .f, .resume-two-col-grid-container .h, .resume-two-col-grid-container .j, .resume-two-col-grid-container .l {
+    padding-top: 0;
+  }
+}
+@media (min-width: 795px) {
+  .resume-two-col-grid-container .b, .resume-two-col-grid-container .d, .resume-two-col-grid-container .f, .resume-two-col-grid-container .h, .resume-two-col-grid-container .j, .resume-two-col-grid-container .l {
+    padding-top: 1.33rem;
+  }
+}
+.resume-two-col-grid-container .b h3, .resume-two-col-grid-container .d h3, .resume-two-col-grid-container .f h3, .resume-two-col-grid-container .h h3, .resume-two-col-grid-container .j h3, .resume-two-col-grid-container .l h3 {
+  margin: 0;
+}
+.resume-two-col-grid-container .b h3, .resume-two-col-grid-container .d h3, .resume-two-col-grid-container .f h3, .resume-two-col-grid-container .h h3, .resume-two-col-grid-container .j h3, .resume-two-col-grid-container .l h3 {
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+  padding-top: 0.5rem;
+}
+.resume-two-col-grid-container .b .h3-tagline, .resume-two-col-grid-container .d .h3-tagline, .resume-two-col-grid-container .f .h3-tagline, .resume-two-col-grid-container .h .h3-tagline, .resume-two-col-grid-container .j .h3-tagline, .resume-two-col-grid-container .l .h3-tagline {
+  padding-bottom: 0.5rem;
+  font-style: italic;
+}
+.resume-two-col-grid-container .b p, .resume-two-col-grid-container .d p, .resume-two-col-grid-container .f p, .resume-two-col-grid-container .h p, .resume-two-col-grid-container .j p, .resume-two-col-grid-container .l p {
+  color: rgb(91, 91, 91);
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+.resume-two-col-grid-container .b hr, .resume-two-col-grid-container .d hr, .resume-two-col-grid-container .f hr, .resume-two-col-grid-container .h hr, .resume-two-col-grid-container .j hr, .resume-two-col-grid-container .l hr {
+  color: lightgray;
+  margin-top: 1.2rem;
 }
