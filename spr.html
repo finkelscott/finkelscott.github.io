@@ -1,0 +1,58 @@
+---
+layout: baselayout.njk
+title: Scott J Finkel
+---
+{% include 'homelink.njk' %}
+
+
+<h1>Case Study: Software Product Registry (SPR)</h1>
+<h2>Context</h2>
+<h4>
+Monetizing proprietary solutions which include open souce code requires extra care to ensure copyrights and licenses are respected and do not expose the company to undue risk. All outbound code must be scanned and reviewed by compliance teams and legal personnel prior to distribution in order to protect the company's IP portfolio.
+</h4>
+<h2>The Problem</h2>
+<h4>The existing Scan &amp; Review process is onerous, repetitive, and takes place too late in the product development lifecycle.</h4>
+<section>
+    <h3><u>Basic Compliance Model: Discovery</u> (aka Scan &amp; Review)</h3>
+    <img src="/images/compliance-model-discovery.png" width="1000">
+    <div class="case-study-note">
+        <h3>Key Challenges</h3>
+        <ul>
+        <li>
+        <strong>Scale:</strong> Each Engineering team works on multiple products. Many Scan Analysts required for first-pass reviews. Global distributed teams of analysts work continuously to keep up with Engineering output.
+        </li><li>
+        <strong>Timeliness:</strong> Scanning happens after code is written. Questions are asked after Engineers are on to the next product or version. Legal staff becomes bottleneck. Release timelines become impacted as IP protection is paramount.
+        </li><li>
+        <strong>Repetition:</strong> Each product has multiple versions. Each version needs independent review. Prior annotations do not carry over to subsequent versions.
+    </div>
+</section>
+<sl-divider></sl-divider>
+
+<h2>Solution</h2>
+<h4>Challenge the existing way of working to alleviate bottlenecks. Identify compliance concerns earlier in the product lifecycle.</h4>
+<section>
+    <h3><u>Compliance Model: Declarative</u> (aka Shift Compliance to the Left)</h3>
+    <img src="/images/compliance-model-declarative.png" width="1000">
+    <div class="case-study-note">
+        <h3>Benefits</h3>
+        <ul>
+        <li>
+        <strong>Timeliness:</strong> Open source packages are reviewed while software engineers continue their work. Problems are identified earlier and remediation can take place while engineers are still engaged.
+        </li><li>
+        <strong>Validation:</strong> Files which have already been reviewed and vetted can be safely ignored in future scans, including subsequent product versions.
+        </li><li>
+        <strong>Efficiency:</strong> Due to validation of known open source packages, the scan and review workloads were reduced by 40-60% in subsequent versions of products where much of the base software remains unchanged. This also applies to product variations, where customers or market regulators required small changes to base products.
+    </div>
+</section>
+<sl-divider></sl-divider>
+
+<section>
+<h2>Conclusion</h2>
+<h4>SPR was orignated to answer the question: <u>What open source software is used in Product X</u>? This initiative not only succeeded in its original intent, but also realized fantastic efficiency gains for the product lifecycle. Stakeholders are now able to trace open source usage throughout product trees, and the challenges presented by the late-stage implementation of the scan and review process have been mitigated.</h4>
+<h3><u>How It All Works Together</u></h3>
+<p>&nbsp;</p>
+    <img src="/images/how-it-all-works-together.png" width="1000">
+</section>
+
+    {% include 'contact.njk' %}
+

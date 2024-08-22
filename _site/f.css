@@ -251,7 +251,7 @@ li {
   .two-col-grid-container {
     grid-template-columns: 1fr 3fr;
     grid-gap: 3.5em;
-    grid-template-areas: "a b" "c d" "e f";
+    grid-template-areas: "aa bb" "a b" "c d" "e f";
   }
 }
 @media (min-width: 320px) {
@@ -266,28 +266,28 @@ li {
   }
 }
 @media (min-width: 320px) {
-  .two-col-grid-container .b, .two-col-grid-container .d, .two-col-grid-container .f {
+  .two-col-grid-container .bb, .two-col-grid-container .b, .two-col-grid-container .d, .two-col-grid-container .f {
     padding-top: 0;
   }
 }
 @media (min-width: 795px) {
-  .two-col-grid-container .b, .two-col-grid-container .d, .two-col-grid-container .f {
+  .two-col-grid-container .bb, .two-col-grid-container .b, .two-col-grid-container .d, .two-col-grid-container .f {
     padding-top: 1.33rem;
   }
 }
-.two-col-grid-container .b h3, .two-col-grid-container .b p, .two-col-grid-container .d h3, .two-col-grid-container .d p, .two-col-grid-container .f h3, .two-col-grid-container .f p {
+.two-col-grid-container .bb h3, .two-col-grid-container .bb p, .two-col-grid-container .b h3, .two-col-grid-container .b p, .two-col-grid-container .d h3, .two-col-grid-container .d p, .two-col-grid-container .f h3, .two-col-grid-container .f p {
   margin: 0;
 }
-.two-col-grid-container .b h3, .two-col-grid-container .d h3, .two-col-grid-container .f h3 {
+.two-col-grid-container .bb h3, .two-col-grid-container .b h3, .two-col-grid-container .d h3, .two-col-grid-container .f h3 {
   font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.1rem;
   padding-top: 0.5rem;
 }
-.two-col-grid-container .b .h3-tagline, .two-col-grid-container .d .h3-tagline, .two-col-grid-container .f .h3-tagline {
+.two-col-grid-container .bb .h3-tagline, .two-col-grid-container .b .h3-tagline, .two-col-grid-container .d .h3-tagline, .two-col-grid-container .f .h3-tagline {
   padding-bottom: 0.5rem;
   font-style: italic;
 }
-.two-col-grid-container .b p, .two-col-grid-container .d p, .two-col-grid-container .f p {
+.two-col-grid-container .bb p, .two-col-grid-container .b p, .two-col-grid-container .d p, .two-col-grid-container .f p {
   color: rgb(91, 91, 91);
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 300;
@@ -295,7 +295,7 @@ li {
   font-size: 0.9rem;
   line-height: 1.2rem;
 }
-.two-col-grid-container .b hr, .two-col-grid-container .d hr, .two-col-grid-container .f hr {
+.two-col-grid-container .bb hr, .two-col-grid-container .b hr, .two-col-grid-container .d hr, .two-col-grid-container .f hr {
   color: lightgray;
   margin-top: 1.2rem;
 }
@@ -378,4 +378,11 @@ li {
 .resume-two-col-grid-container .b hr, .resume-two-col-grid-container .d hr, .resume-two-col-grid-container .f hr, .resume-two-col-grid-container .h hr, .resume-two-col-grid-container .j hr, .resume-two-col-grid-container .l hr {
   color: lightgray;
   margin-top: 1.2rem;
+}
+
+.case-study-note {
+  background-color: rgb(251, 237, 179);
+  padding: 0.5rem 1.5rem;
+  color: rgb(139, 88, 6);
+  line-height: 1.33rem;
 }
