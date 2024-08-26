@@ -1,85 +1,79 @@
 ---
-layout: resumelayout.njk
+layout: baselayout.njk
 title: Scott J Finkel
 ---
-
-<h2>Recent Projects</h2>
-
-<div class="titletenure">
-    <p class="title">CodeLinaro</p>
-    <p class="tenure">Jan 2020 – Mar 2023</p>
-</div>
-
-<p>An Open Source software distribution platform partnership with Linaro Ltd. focused on security, automation, and customer success.</p>
-<ul>
-    <li>
-        <p>
-        Successfully migrated Qualcomm’s global Engineering organization to new business process automation and security practices related to the publishing of Open Source software artifacts. 
-        </p>
-    </li>
-    <li>
-        <p>
-        Acted as primary liaison and User Experience consultant to the Linaro engineering team, focusing on UI/UX best practices for partner enablement and customer success. 
-        </p>
-    </li>
-    <li>
-        <p>
-        Led the Operations track; established internal practices and procedures including engineering user guides, operational playbooks, live and recorded trainings, and more.
-        </p>
-    </li>
-</ul>
-<div class="buttonbar">
-    <sl-button href="https://codelinaro.org">Visit CodeLinaro</sl-button>
-</div>
+{% include 'homelink.njk' %}
 
 
-<div class="titletenure">
-    <p class="title">Software Product Registry</p>
-    <p class="tenure">Oct 2017 – Jan 2020</p>
-</div>
+<h1>Projects</h1>
+<h4 class="note">Note: The majority of my work was deployed inside the company firewall, and as such is not accessible from here, nor was it acceptable to take sample screenshots, diagrams, or code from the initiatives.</h3>
+<section class="two-col-grid-container">
 
-<p>
-A system of record for Open Source software composition created to address the question, “What Open Source packages are used in my product?”
-</p>
-<ul>
-    <li>
-        <p>
-        Enabled reusable software composition and legal analysis components, negating the need for repetitive scanning and review of subsequent software versions.
-        </p>
-    </li>
-    <li>
-        <p>
-        Produced software bill of materials (SBOM) reports for compliance teams to understand the packaged content as well as overall licensing and copyright concerns for a given product tree. 
-        </p>
-    </li>
-</ul>
+    <div class="aa">
+        <h2><a href="../spr/">Software Product Registry</a></h2>
+        <a href="../spr/"><img src="/images/compliance-model-discovery.png" width="250"></a>
+        <sl-divider></sl-divider>
+        <a href="../spr/">
+        <sl-button variant="secondary" small>
+        <strong>Case Study</strong></a>
+        </sl-button>
+    </div>
+    <div class="bb">
+        <h3>Qualcomm Technologies, Inc.</h3>
+        <p class="merriweather-sans-light h3-tagline">Oct 2018 - Feb 2021</p>
+        <p />
+        <p>A system of record for Open Source software composition created to address the question, “What Open Source is used in my product?”</p>
+        <ul>
+        <li><p>Led the user experience design for new legal analysis tooling; delivered persuasive design arguments resulting in improved analyst efficiency by negating the need for repetitive scanning and review of subsequent software versions.</p></li>
+        <li><p>Designed and produced software bill of materials (SBOM) reports for compliance teams to understand the overall licensing and copyright concerns for a given product tree.</p></li>
+        <li><p>Skills: Agile Methodologies · Visual Storytelling · Analytical Skills · User Interface Prototyping · Graphic User Interface (GUI) Design · User Experience Design (UED) · Redux.js · UX Research · Application Development · Front-End Design · Technical Requirements · Cross-functional Collaborations · Cross-team Collaboration · React.js</p></li>
+        </ul>  
+    </div>
 
-<div class="titletenure">
-    <p class="title">Qualcomm Innovation Center (QuIC)</p>
-    <p class="tenure">Feb 2021 – Apr 2016</p>
-</div>
+    <div class="a">
+        <h2>CodeLinaro</h2>
+        <img src="/images/clo-home.jpg" width="250">
+    </div>
+    <div class="b">
+        <h3>Qualcomm Technologies, Inc.</h3>
+        <p class="merriweather-sans-light h3-tagline">Jan 2020 - May 2023</p>
+        <p />
+        <p>An Open Source software distribution platform partnership with Linaro Ltd. focused on security, automation, and customer success.</p>
+        <ul>
+        <li><p>Successfully migrated Qualcomm’s global Engineering organization to new business process automation and security practices related to the publishing of Open Source software artifacts.</p></li>
+        <li><p>Acted as primary liaison and User Experience consultant to the Linaro engineering team, focusing on UI/UX best practices for partner enablement and customer success.</p></li>
+        <li><p>Led the Operations track; established internal practices and procedures including engineering user guides, operational playbooks, live and recorded trainings, and more.</p></li>
+        <li><p>Matrix-managed a team of five engineers related to CLO backend automation, security, and operational support, including agile-based development and roadmap planning.</p></li>
+        </ul>  
+    </div>    
 
-<p>
-Cross-functional collaboration with Marketing and Brand resources to define and deliver a front-end to QuIC GitHub resources.
-</p>
+    <div class="c">
+        <h2>Qualcomm Innovation Center</h2>
+        <img src="/images/quic-home.jpg" width="250">
+    </div>
+    <div class="d">
+        <h3>Qualcomm Technologies, Inc.</h3>
+        <p class="merriweather-sans-light h3-tagline">Feb 2021 - May 2023</p>
+        <p />
+        <p>This GitHub Pages site was part of a cross-functional rebranding and relaunch of the Qualcomm Innovation Center's web presence.</p>
+        <ul>
+        <li><p>Partnered with Corporate Marketing and senior leadership in QuIC to produce and promote this initiative.</p></li>
+        <li><p>Although this page was decomissioned in mid-2024, if you're patient, the Internet Archive has a copy <strong><a href="https://web.archive.org/web/20231227001305/https:/quic.github.io/">here</a></strong>.</p></li>
+        </ul>  
+    </div>
 
-<p>&nbsp;</p>
+  <div class="e"><h2>Want to learn more?</h2></div>
+  <div class="f">
+    <a href="/">
+        <sl-button variant="primary" outline>Home</sl-button>
+    </a>
+    <a href="/resume">
+        <sl-button variant="primary" outline>Résumé</sl-button>
+    </a>
+    <a href="/about">
+        <sl-button variant="primary" outline>About Me</sl-button>
+    </a>
+  </div>
+    {% include 'contact.njk' %}
 
-<div class="titletenure">
-    <p class="title">Mobile Approvals</p>
-    <p class="tenure">Oct 2013 – Jan 2016</p>
-</div>
-
-<p>An Open Source software distribution platform partnership with Linaro Ltd. focused on security, automation, and customer success.</p>
-<ul>
-    <li>
-        <p>A mobile-first cross-functional approval application with a plug-in architecture for widely varied enterprise systems including timecards, group management, system access, finance, and others.</p>
-    </li>
-    <li>
-        <p>User Experience lead and User Interface developer including concept-to-completion pipeline of user research, sketches and wireframes, prototypes, production code, user acceptance testing, and feature releases.
-</p>
-    </li>
-    
-</ul>
-	
-	
+</section>

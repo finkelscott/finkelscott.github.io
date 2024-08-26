@@ -281,7 +281,6 @@ li {
 .two-col-grid-container .bb h3, .two-col-grid-container .b h3, .two-col-grid-container .d h3, .two-col-grid-container .f h3 {
   font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.1rem;
-  padding-top: 0.5rem;
 }
 .two-col-grid-container .bb .h3-tagline, .two-col-grid-container .b .h3-tagline, .two-col-grid-container .d .h3-tagline, .two-col-grid-container .f .h3-tagline {
   padding-bottom: 0.5rem;
