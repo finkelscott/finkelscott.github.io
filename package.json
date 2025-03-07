@@ -1,13 +1,13 @@
 {
   "name": "finkelscott.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "A website for Scott Finkel, a software designer in San Diego, California.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Scott J Finkel",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
