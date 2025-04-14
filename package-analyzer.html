@@ -8,20 +8,30 @@ title: Scott J Finkel
 <h1>Case Study: Package Analyzer</h1>
 
 <h2>The Problem</h2>
-<p>As Open Source is increasingly used to build modern software, license concerns can affect proprietary development. Package Analyzer's goal is to answer the question, <strong>&quot;What licenses are present in my product?&quot;</strong> This allows product owners to mitigate an unfriendly license terms or considerations prior to launch.</p>
+<p>Open Source packages are increasingly used to build modern software. Licenses can conflict with one another, and as such it is important to understand package composition from a licensing perspective. Enter <strong>Package Analyzer</strong> &emdash; a tool designed to answer the question, <strong>&quot;What licenses are present in my product?&quot;</strong></p>
 <section style="margin: 1rem 0">
     <p>Input: package.json</p>
     <p>Output: Visualization of metadata, license(s), version(s), and links for further exploration as needed.</p>
     <br/>
     <img src="/images/pkgjson-viz.png" width="800">
     <br/>
-    <br/>
-<h3>Try it out!</h3>
-    <a href="https://package-analyzer-sjf.netlify.app/" target="_blank">
-        <img src="/images/package-analyzer-preview.jpg">
-    </a>
+    <h2>The Process</h2>
+<p>The initial plan was to employ a textarea for JSON input. This would allow users to paste in their package.json file and see the results. However, this approach presented a couple of UX challenges during the testing phase:</p>
+<ul>
+    <li>The friction of having to open the file and manually select the contents is unnecessary.</li>
+    <li>The JSON is sometimes large and complex, and there was a tendency to become distracted by the complexity and formatting, when the content of the file is not the focus.</li>
+</ul>
 
-    <br/>
+<p>To address these concerns, I implemented a file-input approach that allows users to more simply select a package.json file for upload. This approach is faster and more intuitive.</p>
+<br/>
+<p>Including small touches like basic error handling, a count of dependencies and column sorting where it makes sense based on workflow (by Author, by License, by Name) enhances the user experience.</p>
+<br/>
+<h2>The Solution</h2>
+<h3>Want to try it out for yourself? <a href="https://package-analyzer-sjf.netlify.app/" target="_blank">click here</a></h3>
+    <img src="/images/pa-result.jpg" width="800">
+
+    
+
 
 
 <section class="two-col-grid-container">
