@@ -8,7 +8,7 @@ title: Scott J Finkel
 <h1>Case Study: Package Analyzer</h1>
 
 <h2>The Problem</h2>
-<p>Open Source packages are increasingly used to build modern software. Licenses can conflict with one another, and as such it is important to understand package composition from a licensing perspective. Enter <strong>Package Analyzer</strong> &emdash; a tool designed to answer the question, <strong>&quot;What licenses are present in my product?&quot;</strong></p>
+<p>Open Source packages are increasingly used to build modern software. Licenses can conflict with one another, and as such it is important to understand package composition from a licensing perspective. Enter <strong>Package Analyzer</strong>—a tool designed to answer the question, <em>&quot;What licenses are present in my product?&quot;</em></p>
 <section style="margin: 1rem 0">
     <p>Input: package.json</p>
     <p>Output: Visualization of metadata, license(s), version(s), and links for further exploration as needed.</p>
@@ -16,18 +16,18 @@ title: Scott J Finkel
     <img src="/images/pkgjson-viz.png" width="800">
     <br/>
     <h2>The Process</h2>
-<p>The initial plan was to employ a textarea for JSON input. This would allow users to paste in their package.json file and see the results. However, this approach presented a couple of UX challenges during the testing phase:</p>
+<p>The initial plan was to employ a textarea for JSON input, and then fetch dependency data from npm for tabular display and license breakdown in a graphical format. This approach allowed users to paste in their package.json file and see the results. However, during the testing phase I noticed a couple of UX challenges:</p>
 <ul>
     <li>The friction of having to open the file and manually select the contents is unnecessary.</li>
-    <li>The JSON is sometimes large and complex, and there was a tendency to become distracted by the complexity and formatting, when the content of the file is not the focus.</li>
+    <li>The JSON is sometimes large and complex, and there was a tendency to become distracted by the way the formatting got mangled in the textarea.</li>
 </ul>
 
-<p>To address these concerns, I implemented a file-input approach that allows users to more simply select a package.json file for upload. This approach is faster and more intuitive.</p>
+<p>To address these concerns, I implemented a file-input approach that allows users to simply select a package.json file for upload. This approach is faster and more intuitive, and removed the distractions of formatting and file contents altogether.</p>
 <br/>
 <p>Including small touches like basic error handling, a count of dependencies and column sorting where it makes sense based on workflow (by Author, by License, by Name) enhances the user experience.</p>
 <br/>
 <h2>The Solution</h2>
-<h3>Want to try it out for yourself? <a href="https://package-analyzer-sjf.netlify.app/" target="_blank">click here</a></h3>
+<h3 class="case-study-note">Want to try it out for yourself? <a href="https://package-analyzer-sjf.netlify.app/" target="_blank">click here</a></h3>
     <img src="/images/pa-result.jpg" width="800">
 
     
