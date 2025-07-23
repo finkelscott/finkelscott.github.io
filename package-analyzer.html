@@ -16,15 +16,15 @@ title: Scott J Finkel
     <img src="/images/pkgjson-viz.png" width="800">
     <br/>
     <h2>The Process</h2>
-<p>The initial plan was to employ a textarea for JSON input, and then fetch dependency data from npm for tabular display and license breakdown in a graphical format. This approach allowed users to paste in their package.json file and see the results. However, during the testing phase I noticed a couple of UX challenges:</p>
+<p>The initial plan was to employ a textarea for JSON input, and then fetch dependency data from npm for tabular display and license breakdown in a graphical format. This approach allowed users to paste in their package.json file and see the results. However, during the testing phase a couple of UX challenges were observed:</p>
 <ul>
     <li>The friction of having to open the file and manually select the contents is unnecessary.</li>
     <li>The JSON is sometimes large and complex, and there was a tendency to become distracted by the way the formatting got mangled in the textarea.</li>
 </ul>
 
-<p>To address these concerns, I implemented a file-input approach that allows users to simply select a package.json file for upload. This approach is faster and more intuitive, and removed the distractions of formatting and file contents altogether.</p>
+<p>To address these concerns, a simplified file-input approach that allows users to select a package.json file for upload was implemented. This approach is faster and more intuitive, and removed the distractions of formatting and the unnecessary step of selecting thefile contents from the flow.</p>
 <br/>
-<p>Including small touches like basic error handling, a count of dependencies and column sorting where it makes sense based on workflow (by Author, by License, by Name) enhances the user experience.</p>
+<p>Includes small touches to enhance the user experience: basic error handling, ability to load an example if no file is selected, a count of dependencies, and column sorting where it makes sense (Author, License, Name).</p>
 <br/>
 <h2>The Solution</h2>
 <h3>Try it out:&nbsp;&nbsp;
