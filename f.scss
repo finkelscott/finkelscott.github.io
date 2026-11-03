@@ -322,7 +322,7 @@ li {
 }
 
 .footer {
-  margin-top: 3em; 
+  margin-top: 10rem; 
   color:rgb(121, 121, 121);
   font-size: small;
   text-align: center;
@@ -508,13 +508,15 @@ li {
         font-family: $sans;
         font-weight: 700;
         margin-top: 0;
-        margin-bottom: 0.75rem;
+        margin-bottom: 1.5rem;
+
+        &:last-of-type {
+          margin-bottom: 0.75rem;
+        }
+
       }
 
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-
+      
       .contact-info {
         display: flex;
         gap: 2rem;
