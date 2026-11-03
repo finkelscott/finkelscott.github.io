@@ -308,9 +308,14 @@ li {
   margin-top: 3em;
   color: rgb(121, 121, 121);
   font-size: small;
-  position: fixed;
   text-align: center;
+  position: fixed;
   bottom: 1rem;
+}
+@media (min-width: 320px) {
+  .footer {
+    position: static;
+  }
 }
 
 .contact-info {
@@ -396,7 +401,7 @@ li {
   .home-two-col-container {
     grid-template-columns: 1fr;
     grid-template-areas: "left" "right";
-    grid-gap: 2rem;
+    grid-gap: 1.33rem;
   }
 }
 @media (min-width: 795px) {
@@ -419,6 +424,11 @@ li {
   margin-bottom: 2rem;
   list-style: none;
   padding-inline-start: 0;
+}
+@media (min-width: 320px) {
+  .home-two-col-container .home-left ul {
+    margin-bottom: 0;
+  }
 }
 .home-two-col-container .home-left ul li {
   font-family: "Merriweather Sans", sans-serif;
@@ -444,6 +454,11 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   flex-shrink: 0;
+}
+@media (min-width: 320px) {
+  .home-two-col-container .home-left ul li {
+    margin-bottom: 0.66rem;
+  }
 }
 .home-two-col-container .home-right {
   grid-area: right;

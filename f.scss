@@ -325,9 +325,13 @@ li {
   margin-top: 3em; 
   color:rgb(121, 121, 121);
   font-size: small;
-  position: fixed;
   text-align: center;
+  position: fixed;
   bottom: 1rem;
+  
+  @include responsive('small') {
+    position: static;
+  }
 }
 
 .contact-info {
@@ -435,7 +439,7 @@ li {
       grid-template-areas:
         "left"
         "right";
-      grid-gap: 2rem;
+      grid-gap: 1.33rem;
     }
 
     @include responsive('medium') {
@@ -459,6 +463,10 @@ li {
         margin-bottom: 2rem;
         list-style: none;
         padding-inline-start: 0;
+
+        @include responsive('small') {
+          margin-bottom: 0;
+        }
 
         li {
           font-family: "Merriweather Sans", sans-serif;
@@ -484,6 +492,10 @@ li {
             background-repeat: no-repeat;
             background-position: center;
             flex-shrink: 0;
+          }
+
+          @include responsive('small') {
+            margin-bottom: 0.66rem;;
           }
         }
       }
