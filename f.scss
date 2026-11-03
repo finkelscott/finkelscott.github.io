@@ -113,15 +113,14 @@ h1 {
   letter-spacing: -0.05em;
 
   @include responsive('small') { 
-    font-size: 2rem;
+    font-size: 1.83rem;
     line-height: 110%;
     margin-bottom: 0;
   }
   @include responsive('large') { 
-    font-size: 3rem;
+    font-size: 2.66rem;
     line-height: 125%;
-    // margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -323,10 +322,12 @@ li {
 }
 
 .footer {
-  text-align: center;
   margin-top: 3em; 
   color:rgb(121, 121, 121);
   font-size: small;
+  position: fixed;
+  text-align: center;
+  bottom: 1rem;
 }
 
 .contact-info {
@@ -423,4 +424,109 @@ li {
     padding: 0.75rem 1rem;
     color: rgb(139, 88, 6);
     line-height: 1.33rem;
+  }
+
+  .home-two-col-container {
+    display: grid;
+    margin-top: 2rem;
+
+    @include responsive('small') {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "left"
+        "right";
+      grid-gap: 2rem;
+    }
+
+    @include responsive('medium') {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "left right";
+      grid-gap: 3rem;
+    }
+
+    .home-left {
+      grid-area: left;
+
+      h2 {
+        font-family: $sans;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+      }
+
+      ul {
+        margin-bottom: 2rem;
+        list-style: none;
+        padding-inline-start: 0;
+
+        li {
+          font-family: "Merriweather Sans", sans-serif;
+          font-weight: 300;
+          color: rgb(91, 91, 91);
+          margin-bottom: 1.25rem;
+          font-size: 1rem;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          &::before {
+            content: "";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: var(--sl-color-primary-500);
+            border-radius: 50%;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4" stroke-linecap="butt" stroke-linejoin="miter"><line x1="0" y1="12" x2="16" y2="12"/><polyline points="10 7 18 12 12 17"/></svg>');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+
+    .home-right {
+      grid-area: right;
+
+      h2 {
+        font-family: $sans;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .contact-info {
+        display: flex;
+        gap: 2rem;
+        font-size: 3rem;
+
+        .icon-link {
+          color: var(--sl-color-primary-600);
+          transition: color 0.2s ease;
+          margin-top: 0;
+
+          &:hover {
+            color: var(--sl-color-primary-400);
+          }
+        }
+      }
+    }
+
+    .home-nav-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+
+      a {
+        display: inline-block;
+      }
+    }
   }
